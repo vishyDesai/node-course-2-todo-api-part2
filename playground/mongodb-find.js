@@ -13,7 +13,7 @@ MongoClient.connect('mongodb://172.17.5.175:27017/TodoApp', (err, db) => {
     console.log('unable to connect to todos', err);
   });*/
 
- db.collection('Users').find({name: 'Vishal Desai'}).toArray().then((doc) => {
+ db.collection('Users').find({name : 'Vishal Desai'}).toArray().then((doc) => {
    console.log(JSON.stringify(doc, undefined, 2));
  }, (err) => {
    console.log('Unable to get Document from Users');
